@@ -1,22 +1,22 @@
 import React from 'react';
 import './Authorization-page.scss';
 
-import MainScreen from "../../Componets/Main-screen/Main-screen";
 import {Button} from "../../Componets/ui-kit/Button/Button";
 import Input from "../../Componets/Input/Input";
 import Title from "../../Componets/Title";
 import Text from "../../Componets/Text/Text";
+import MainScreenImg from "../../Componets/Main-screen-img/Main-screen-img";
 
 const AuthorizationPage = () => {
     return (
         <div className="authorization-page">
-            <MainScreen
-                title="Зарабатывайте на рекомендациях МТТ"
-                text="Рекомендуйте МТТ от себя лично и зарабатывайте до 20% ежемесячно от расходовкаждого клиента!"
-                btnText="Подробнее"
+            <MainScreenImg
+                title="Тинькофф Банк"
+                text="Первые два месяца — бесплатно"
+                btnText="Воспользоваться предложением"
                 btnColor="blue"
+                picture="/main-screen/tinkoff-big-pic.png"
             />
-
             <div className="form-registration">
                 <div className="container">
                     <div className="form-registration__inner">
