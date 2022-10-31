@@ -1,4 +1,88 @@
 .footer {
     background: #333333;
     color: #FFFFFF;
+
+    &__inner {
+        padding: 40px 0;
+    }
+
+    &__up-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #606060;
+    }
+    .social {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        &-icon {
+            width: 40px;
+            height: 40px;
+            background: #707070;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 25px;
+
+            .image {
+                position: relative;
+                z-index: 5;
+            }
+        }
+    }
+    //menu
+    &__menu {
+        max-width: 928px;
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 0;
+        border-bottom: 1px solid #606060;
+
+    }
+    .title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+
+        max-width: 845px;
+    }
+
+    .list {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+
+        &__title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+
+        }
+        &-item {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 29px;
+            color: #A4A4A4;
+        }
+
+    }
+
+    .copy {
+        margin-top: 32px;
+        .text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
 }

@@ -12,6 +12,16 @@
         margin: 0;
         padding: 10px 32px;
     }
+
+    .tabs {
+        .button {
+            padding: 8px 16px;
+            font-size: 16px;
+            line-height: 19px;
+            background-color: transparent;
+            color: #4B79A5;
+        }
+    }
 }
 
 .menu {
@@ -20,17 +30,19 @@
         list-style-type: none;
         margin-right: 30px;
 
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        /* identical to box height */
-
-
-        color: #4F4F4F;
         &:last-child {
             margin-right: 0;
+        }
+
+        &__link {
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #4F4F4F;
         }
     }
 }

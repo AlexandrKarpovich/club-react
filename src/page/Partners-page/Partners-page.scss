@@ -1,0 +1,71 @@
+.grid-2 {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .box {
+    &:last-child {
+      max-width: 714px;
+    }
+    background: transparent;
+  }
+}
+
+.partners-page {
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: #4F4F4F;
+  }
+
+  &__cards {
+    margin-top: 31px;
+    background-color: #fff;
+    padding: 32px;
+
+    &:first-child {
+      margin-top: 40px;
+    }
+    &__box {
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .box {
+      &__item {
+        .title {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 38px;
+          color: #4F4F4F;
+        }
+        .button {
+          padding: 0 30px;
+        }
+        &:first-child {
+          max-width: 336px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        &:last-child {
+          max-width: 679px;
+        }
+      }
+    }
+  }
+
+  .title-line {
+    display: flex;
+
+    .image {
+      margin-right: 13px;
+    }
+  }
+  .list {
+    margin-left: 40px;
+  }
+
+}

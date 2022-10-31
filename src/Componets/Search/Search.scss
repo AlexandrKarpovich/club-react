@@ -1,0 +1,25 @@
+.search {
+  position: relative;
+  //max-width: 1236px;
+  //margin: auto;
+  margin-bottom: 24px;
+  &__input {
+    font-weight: var(--fw-normal);
+    font-size: 16px;
+    line-height: 26px;
+
+    max-width: 1236px;
+    width: calc(100% - 2%);
+    margin: auto;
+    padding: 15px 13px;
+    background: #FFFFFF;
+    border: 1px solid #DCE5ED;
+    border-radius: 6px;
+  }
+  svg {
+    position: absolute;
+    padding: 15px 13px;
+    top: 0;
+    right: 0;
+  }
+}

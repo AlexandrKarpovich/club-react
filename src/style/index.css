@@ -1,0 +1,25 @@
+/*@import-normalize;*/
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main-page-bg);
+}
+
+:root {
+  /*color*/
+  --main-page-bg: #F2F3F7;
+  --white-color: #fff;
+
+  --blue-color: #517AA4;
+  --blue-light-color: #4B79A5;
+  --light-color: transparent;
+
+  --color-text: #4F4F4F;
+
+  --font-family: 'Roboto';
+  --fw-black: 700;
+  --fw-bold: 500;
+  --fw-normal: 400;
+  --border-radius: 6px;
+}

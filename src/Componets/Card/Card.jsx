@@ -1,20 +1,20 @@
 import './Card.scss';
-import CardStock from "../Card-stock";
-import CardTitle from "../Card-title";
 import Image from "../Image";
-import CardText from "../Card-text";
-import Button from "../Button";
+import { Button } from "../ui-kit/Button/Button";
 
-const Card = ({icon, stock, title, text, btn}) => {
-  return (
-    <div className="card">
-        <Image icon={icon} />
-        <CardStock stock={stock} />
-        <CardTitle title={title} />
-        <CardText text={text} />
-        <Button btn={btn} />
-    </div>
-  )
+const Card = ({icon, stock, title, text}) => {
+
+    return (
+        <div className="card">
+            <Image icon={icon} />
+
+            <div className="card__stock">{stock}</div>
+            <h4 className='card__title'>{title}</h4>
+            <p className='card__text'>{text}</p>
+
+            <Button size="large" label="Оставить заявку" light="true" />
+        </div>
+    )
 }
 
 export default Card;

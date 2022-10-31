@@ -1,71 +1,52 @@
 .card {
     background: #FFFFFF;
     padding: 32px;
-}
 
-// card-stock
-.card-stock {
-    padding: 16px 32px;
-    min-height: 74px;
+    // card-stock
+    &__stock {
+        padding: 16px 32px;
+        min-height: 44px;
+        margin: 24px 0;
 
-    background: #DCE5ED;
-    border-radius: 6px;
+        background: #DCE5ED;
+        border-radius: 6px;
 
-}
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
 
+        color: #517AA4;
 
-// .card-title
-.card-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 130%;
-    /* identical to box height, or 26px */
+    }
+    // .card-title
+    &__title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #4F4F4F;
+        margin-bottom: 12px;
+    }
 
-    color: #4F4F4F;
-}
-
-// card-text
-.card-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    /* identical to box height, or 26px */
-
-    text-transform: lowercase;
-
-    color: #817D7D;
-}
-
-
-// button
-.button {
-    // width: 332px;
-    // height: 56px;
-    align-items: center;
-    padding: 15px 30px;
-    margin: auto;
-
-    background-color: #fff;
-    border: 1px solid #DCE5ED;
-    border-radius: 6px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #4B79A5;
-
-    &:hover {
-        cursor: pointer;
+    // card-text
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: lowercase;
+        color: #817D7D;
+        margin-bottom: 32px;
     }
 }
+
+
+
+
+
+
+
