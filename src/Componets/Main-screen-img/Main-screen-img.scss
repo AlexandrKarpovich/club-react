@@ -5,16 +5,27 @@
 
   .image {
     max-width: 711px;
+    width: 100%;
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
   }
 
   &__box {
     max-width: 645px;
+    margin-right: 25px;
     text-align: left;
+    @media (max-width: 768px) {
+      margin-right: 0;
+      text-align: center;
+    }
   }
 
   &__title {

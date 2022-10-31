@@ -13,7 +13,9 @@ const MainScreenImg = ({ title, text, btnText, btnColor, picture }) => {
                         <p className="main-screen-img__text">{ text }</p>
                         <Button label={ btnText } color={ btnColor } />
                     </div>
-                    <Image icon={ picture } />
+                    <div className="block-pic">
+                        <Image icon={ picture } />
+                    </div>
                 </div>
             </div>
         </div>

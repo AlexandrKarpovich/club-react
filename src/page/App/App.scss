@@ -12,3 +12,10 @@
 .section {
   padding: 94px 0;
 }
+
+body {
+  &.mobile-menu-open {
+    position: fixed;
+    width: -webkit-fill-available;
+  }
+}

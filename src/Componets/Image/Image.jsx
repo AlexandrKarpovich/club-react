@@ -2,7 +2,7 @@ import './Image.scss';
 
 const Image = ({icon}) => {
   return (
-    <img className="image" src={`images/${icon}`} />
+    <img className="image" src={`../images/${icon}`} />
   )
 }
 

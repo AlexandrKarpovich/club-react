@@ -1,22 +1,63 @@
-.form-registration {
-  background-color: #fff;
-  padding: 94px 0;
-  &__inner {
+.offers-page {
+  .form-registration {
+    background-color: #fff;
+    padding: 94px 0;
+    &__box {
+      &:first-child {
+        max-width: 500px;
+      }
+      &:last-child {
+        max-width: 711px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+    }
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .offers-page__cards {
     display: flex;
     justify-content: space-between;
-  }
 
-  &__box {
-    &:first-child {
-      max-width: 500px;
-    }
-    &:last-child {
-      max-width: 711px;
-      width: 100%;
-      display: flex;
+    @media (max-width: 768px) {
       flex-direction: column;
     }
 
+    .box {
+      .title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 39px;
+        color: #4F4F4F;
+      }
+      &:first-child {
+        max-width: 500px;
+        margin-right: 20px;
+      }
+      &:last-child {
+        max-width: 711px;
+        width: 100%;
+      }
+
+
+    }
+  }
+
+  .agree {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    .text {
+      margin-left: 15px;
+    }
   }
 
 }

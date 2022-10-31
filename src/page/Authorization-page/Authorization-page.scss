@@ -1,0 +1,24 @@
+.authorization-page {
+  .form-registration {
+    background-color: #fff;
+    padding: 94px 0;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__box {
+      &:first-child {
+        max-width: 500px;
+      }
+      &:last-child {
+        max-width: 711px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+    }
+
+  }
+}

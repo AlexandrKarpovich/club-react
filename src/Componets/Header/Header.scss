@@ -11,6 +11,10 @@
     .button {
         margin: 0;
         padding: 10px 32px;
+
+        @media (max-width: 900px) {
+            padding: 7px 32px;
+        }
     }
 
     .tabs {
@@ -22,10 +26,59 @@
             color: #4B79A5;
         }
     }
+
+    &-btns {
+        display: flex;
+    }
+
+    //burger
+    .burger {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #DCE5ED;
+        border-radius: 6px;
+        transition: 300ms ease;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+
+    @media (min-width: 900px) {
+        .burger {
+            display: none;
+        }
+    }
 }
+
 
 .menu {
     display: flex;
+
+    @media (max-width: 900px) {
+        //display: none;
+
+        &.hidden { display: none; }
+        &.open {
+            position: fixed;
+            left: 0;
+            top: 60px;
+            height: 100%;
+            background: #fff;
+            width: 100%;
+            padding: 20px;
+            z-index: 5;
+            flex-direction: column;
+
+            .menu__item {
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 35px;
+                color: #517AA4;
+            }
+        }
+    }
     &__item {
         list-style-type: none;
         margin-right: 30px;

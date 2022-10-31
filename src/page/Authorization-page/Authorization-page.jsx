@@ -1,8 +1,7 @@
 import React from 'react';
 import './Authorization-page.scss';
+
 import MainScreen from "../../Componets/Main-screen/Main-screen";
-import Search from "../../Componets/Search";
-import Grid from "../../Componets/Grid";
 import {Button} from "../../Componets/ui-kit/Button/Button";
 import Input from "../../Componets/Input/Input";
 import Title from "../../Componets/Title";
@@ -27,9 +26,9 @@ const AuthorizationPage = () => {
                             <Text text="Разъясняющий текст, что нужно ввести данные из личного кабинета МТТ." />
                         </div>
                         <div className="form-registration__box">
-                            <Input clas="input" type="text" name="name" placeholder="Пароль" />
+                            <Input clas="input" type="text" name="name" placeholder="Логин" />
                             <Input clas="input" type="password" name="password" placeholder="Пароль" />
-                            <Button label="Воспользоваться предложением" color="blue" size="large" />
+                            <Button label="Войти" size="large" />
                         </div>
                     </div>
                 </div>

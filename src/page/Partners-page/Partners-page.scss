@@ -32,6 +32,10 @@
       display: flex;
       justify-content: space-between;
 
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
     }
     .box {
       &__item {
@@ -41,13 +45,10 @@
           line-height: 38px;
           color: #4F4F4F;
         }
-        .button {
-          padding: 0 30px;
-        }
         &:first-child {
           max-width: 336px;
           display: flex;
-          flex-wrap: wrap;
+          flex-direction: column;
           justify-content: space-between;
         }
         &:last-child {
