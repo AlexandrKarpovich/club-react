@@ -4,7 +4,20 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   .box {
+    &:first-child {
+      margin-right: 20px;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 40px;
+        flex-direction: column;
+      }
+    }
     &:last-child {
       max-width: 714px;
     }
@@ -26,6 +39,7 @@
     border-radius: var(--border-radius);
     padding: 32px;
 
+
     &:first-child {
       margin-top: 40px;
     }
@@ -45,15 +59,27 @@
           font-size: 24px;
           line-height: 38px;
           color: #4F4F4F;
+
+          @media (max-width: 768px) {
+            margin-bottom: 16px;
+          }
         }
         &:first-child {
           max-width: 336px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
         }
         &:last-child {
           max-width: 679px;
+
+          @media (max-width: 768px) {
+            margin-top: 24px;
+          }
         }
       }
     }
