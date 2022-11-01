@@ -62,6 +62,10 @@
         color: #FFFFFF;
         max-width: 845px;
         margin-right: 30px;
+
+        @media (max-width: 764px) {
+            font-size: 16px;
+        }
     }
 
     .list {
