@@ -52,8 +52,6 @@
     }
 }
 
-.active{ background-color:#486ca3; color: #fff; padding:6px;}
-
 
 .menu {
     display: flex;
@@ -73,15 +71,19 @@
             z-index: 5;
             flex-direction: column;
 
-            .li {
+            &__item {
                 font-weight: 400;
                 font-size: 30px;
                 line-height: 35px;
                 color: #517AA4;
+
+                &_link {
+                    &.active{ color: #517AA4; }
+                }
             }
         }
     }
-    li {
+    &__item {
         list-style-type: none;
         margin-right: 30px;
 
@@ -96,8 +98,9 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
-
             color: #4F4F4F;
+
+            &.active{ color: #517AA4; }
         }
     }
 }

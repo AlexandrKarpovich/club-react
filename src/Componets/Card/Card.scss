@@ -1,6 +1,10 @@
 .card {
     background: #FFFFFF;
+    border-radius: 6px;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     // card-stock
     &__stock {
@@ -28,7 +32,7 @@
         font-size: 20px;
         line-height: 26px;
         color: #4F4F4F;
-        margin-bottom: 12px;
+        margin: 0 0 12px;
     }
 
     // card-text
@@ -40,7 +44,7 @@
         line-height: 26px;
         text-transform: lowercase;
         color: #817D7D;
-        margin-bottom: 32px;
+        margin: 0 0 32px;
     }
 }
 

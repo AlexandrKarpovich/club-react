@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 
 import './Header.scss';
 import Image from "../Image";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {Button} from "../ui-kit/Button/Button";
 
 const Header = () => {
@@ -13,7 +13,6 @@ const Header = () => {
     document.body.classList.toggle('mobile-menu-open', menuOpen);
   },[menuOpen])
 
-  const setActive = ({ isActive }) =>(isActive ? " active" : "");
 
   return (
     <div className='header'>
@@ -22,16 +21,17 @@ const Header = () => {
           <Image icon="logo.svg" />
 
           <ul  className={`menu ${menuOpen ? 'open' : 'hidden'}`}>
-            <li className={({ isActive }) =>(isActive ? " active" : "")}>
-              <Link className="menu__item__link" to="/"> Партнеры </Link>
+            <li className="menu__item">
+              <NavLink className="menu__item__link" to="/"> Партнеры </NavLink>
             </li>
-            <li className={({ isActive }) =>(isActive ? " active" : "")}>
-              <Link className="menu__item__link" to="/about"> О клубе </Link>
+            <li className="menu__item">
+              <NavLink className="menu__item__link" to="/about"> О клубе </NavLink>
             </li>
-            <li className={({ isActive }) =>(isActive ? " active" : "")}>
-              <Link className="menu__link" to="/parthers"> Предложения</Link> </li>
-            <li className={({ isActive }) =>(isActive ? " active" : "")}>
-              <Link className="menu__item__link" to="/offers"> Зарабатывайте с МТТ</Link>
+            <li className="menu__item">
+              <NavLink className="menu__item__link" to="/parthers"> Предложения</NavLink>
+            </li>
+            <li className="menu__item">
+              <NavLink className="menu__item__link" to="/offers"> Зарабатывайте с МТТ</NavLink>
             </li>
           </ul>
 

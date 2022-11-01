@@ -16,12 +16,12 @@ const App = () => {
       <Header />
         <div className="pages">
             <Routes>
-                <Route exact path="/" element={ <MainPage /> } />
-                <Route exact path="/about" element={ <AboutPage /> } />
-                <Route exact path="/parthers" element={ <PartnersPage /> } />
-                <Route exact path="/offers" element={ <OffersPage /> } />
-                <Route exact path="/authorization" element={ <AuthorizationPage /> } />
-                <Route path="*" element={<MainPage />} />
+                <Route path="/" element={ <MainPage /> } />
+                <Route path="/about" element={ <AboutPage /> } />
+                <Route path="/parthers" element={ <PartnersPage /> } />
+                <Route path="/offers" element={ <OffersPage /> } />
+                <Route path="/authorization" element={ <AuthorizationPage /> } />
+                {/*<Route path="*" element={<MainPage />} />*/}
             </Routes>
         </div>
       <Footer />
