@@ -13,6 +13,8 @@ const Header = () => {
     document.body.classList.toggle('mobile-menu-open', menuOpen);
   },[menuOpen])
 
+  const setActive = ({ isActive }) =>(isActive ? " active" : "");
+
   return (
     <div className='header'>
       <div className="container">
@@ -20,15 +22,15 @@ const Header = () => {
           <Image icon="logo.svg" />
 
           <ul  className={`menu ${menuOpen ? 'open' : 'hidden'}`}>
-            <li className="menu__item">
+            <li className={({ isActive }) =>(isActive ? " active" : "")}>
               <Link className="menu__item__link" to="/"> Партнеры </Link>
             </li>
-            <li className="menu__item">
+            <li className={({ isActive }) =>(isActive ? " active" : "")}>
               <Link className="menu__item__link" to="/about"> О клубе </Link>
             </li>
-            <li className="menu__item">
-              <Link className="menu__item__link" to="/parthers"> Предложения</Link> </li>
-            <li className="menu__item">
+            <li className={({ isActive }) =>(isActive ? " active" : "")}>
+              <Link className="menu__link" to="/parthers"> Предложения</Link> </li>
+            <li className={({ isActive }) =>(isActive ? " active" : "")}>
               <Link className="menu__item__link" to="/offers"> Зарабатывайте с МТТ</Link>
             </li>
           </ul>

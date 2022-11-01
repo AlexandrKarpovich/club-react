@@ -52,6 +52,8 @@
     }
 }
 
+.active{ background-color:#486ca3; color: #fff; padding:6px;}
+
 
 .menu {
     display: flex;
@@ -71,7 +73,7 @@
             z-index: 5;
             flex-direction: column;
 
-            .menu__item {
+            .li {
                 font-weight: 400;
                 font-size: 30px;
                 line-height: 35px;
@@ -79,7 +81,7 @@
             }
         }
     }
-    &__item {
+    li {
         list-style-type: none;
         margin-right: 30px;
 

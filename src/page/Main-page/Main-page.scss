@@ -1,5 +1,22 @@
 .main-page {
+    //width: 100%;
     background: #F2F3F7;
+
+    .main-screen {
+        &__inner {
+            max-width: 450px;
+            margin: auto;
+        }
+        &__title {
+            margin: 0 0 10px;
+        }
+        &__text {
+            margin: 0 0 23px;
+        }
+        .button {
+            padding: 17px 78px;
+        }
+    }
 
     .tabs {
         margin-bottom: 24px;
