@@ -11,6 +11,11 @@
     font-size: 40px;
     line-height: 52px;
     text-align: center;
+
+    @media (max-width: 375px) {
+      font-size: 24px;
+      line-height: 31px;
+    }
   }
   &__text {
     font-family: var(--font-family);
@@ -20,5 +25,16 @@
     font-size: 18px;
     line-height: 25px;
     text-align: center;
+
+    @media (max-width: 375px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .button {
+    @media (max-width: 375px) {
+      width: 100%;
+    }
   }
 }

@@ -22,4 +22,7 @@ body {
   --fw-bold: 500;
   --fw-normal: 400;
   --border-radius: 6px;
+
+  --tablet: 768px;
+  --mobile: 375px;
 }

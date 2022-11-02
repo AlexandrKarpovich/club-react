@@ -18,7 +18,9 @@ const Header = () => {
     <div className='header'>
       <div className="container">
         <div className="header__inner">
-          <Image icon="logo.svg" />
+          <div className="logo-box">
+            <Image icon="logo.svg" />
+          </div>
 
           <ul  className={`menu ${menuOpen ? 'open' : 'hidden'}`}>
             <li className="menu__item">

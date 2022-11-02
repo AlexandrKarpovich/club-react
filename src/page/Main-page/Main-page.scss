@@ -21,9 +21,22 @@
     .tabs {
         margin-bottom: 24px;
 
+        @media (max-width: 375px) {
+            overflow-x: auto;
+            display: flex;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+
+
+
         .button {
             margin-right: 8px;
             margin-bottom: 8px;
+            min-width: fit-content;
         }
     }
 }

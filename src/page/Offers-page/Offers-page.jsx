@@ -38,8 +38,8 @@ const OffersPage = () => {
                             <Title title="Для того, чтобы воспользоваться предложением заполните форму" />
                         </div>
                         <div className="form-registration__box">
-                            <Input clas="input" type="text" name="name" placeholder="имя" />
-                            <Input clas="input" type="tel" name="number" placeholder="телефон" />
+                            <Input clas="input" type="text" name="name" placeholder="Имя" />
+                            <Input clas="input" type="tel" name="number" placeholder="Телефон" />
                             <Input clas="input" type="email" name="email" placeholder="E-mail" />
                             <Button label="Воспользоваться предложением" color="blue" size="large" />
                             <div className="agree">

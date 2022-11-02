@@ -9,7 +9,8 @@
     line-height: 26px;
 
     max-width: 1236px;
-    width: calc(100% - 2%);
+    width: 100%;
+    box-sizing: border-box;
     margin: auto;
     padding: 15px 13px;
     background: #FFFFFF;

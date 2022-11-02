@@ -1,17 +1,11 @@
 .button {
-    // width: 332px;
-    // height: 56px;
-    align-items: center;
     padding: 15px 30px;
+    align-items: center;
 
     font-family: var(--font-family);
     font-weight: var(--fw-bold);
     font-size: 16px;
     line-height: 22px;
-
-    //display: flex;
-    //align-items: center;
-    //text-align: center;
 
     background-color: #fff;
     border: 1px solid #DCE5ED;
@@ -30,6 +24,7 @@
     &-dark {
         background: var(--blue-color);
         color: var(--white-color);
+
     }
 
     &-large {
@@ -40,38 +35,9 @@
 
     //small
     &-small {
+        line-height: 19px;
         padding: 8px 16px;
+        background-color: transparent;
         font-weight: var(--fw-normal);
     }
 }
-
-
-// button
-//.button {
-//    // width: 332px;
-//    // height: 56px;
-//    align-items: center;
-//    padding: 15px 30px;
-//    margin: auto;
-//
-//    background-color: #fff;
-//    border: 1px solid #DCE5ED;
-//    border-radius: 6px;
-//
-//    font-family: 'Roboto';
-//    font-style: normal;
-//    font-weight: 500;
-//    font-size: 16px;
-//    line-height: 22px;
-//
-//    display: flex;
-//    align-items: center;
-//    text-align: center;
-//
-//    color: #4B79A5;
-//
-//    &:hover {
-//        cursor: pointer;
-//    }
-//}
-

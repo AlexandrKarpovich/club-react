@@ -23,7 +23,7 @@ const AuthorizationPage = () => {
                         <div className="form-registration__box">
                             <Title title="Авторизация в личном кабинете MTT Бизнес" />
                             <Text text="Для того чтобы ознакомиться с предложением необходимо авторизоваться" />
-                            <Text text="Разъясняющий текст, что нужно ввести данные из личного кабинета МТТ." />
+                            {/*<Text text="Разъясняющий текст, что нужно ввести данные из личного кабинета МТТ." />*/}
                         </div>
                         <div className="form-registration__box">
                             <Input clas="input" type="text" name="name" placeholder="Логин" />
