@@ -88,6 +88,10 @@
   .title-line {
     display: flex;
 
+    @media (max-width: 375px) {
+      display: block;
+    }
+
     .image {
       margin-right: 13px;
     }

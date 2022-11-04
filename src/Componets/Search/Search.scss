@@ -3,6 +3,15 @@
   //max-width: 1236px;
   //margin: auto;
   margin-bottom: 24px;
+
+  &:hover {
+    cursor: pointer;
+
+    svg path {
+      stroke: #DCE5ED;
+    }
+  }
+
   &__input {
     font-weight: var(--fw-normal);
     font-size: 16px;
@@ -16,6 +25,11 @@
     background: #FFFFFF;
     border: 1px solid #DCE5ED;
     border-radius: 6px;
+
+    &:focus-visible {
+      //outline: none;
+      outline: #DCE5ED;
+    }
   }
   svg {
     position: absolute;

@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container">
         <div className="header__inner">
           <div className="logo-box">
-            <Image icon="logo.svg" />
+            <Link className="menu__item__link" to="/"> <Image icon="logo.svg" /> </Link>
           </div>
 
           <ul  className={`menu ${menuOpen ? 'open' : 'hidden'}`}>
